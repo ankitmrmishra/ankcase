@@ -1,5 +1,5 @@
 import { cn } from "@/lib/utils";
-import { HTMLAttributes, ReactNode } from "react";
+import { HTMLAttributes } from "react";
 
 interface Phoneprops extends HTMLAttributes<HTMLDivElement> {
   imgsrc: string;
