@@ -98,7 +98,9 @@ const Navbar = async () => {
 
 export default Navbar;
 
-function MountainIcon(props: any) {
+function MountainIcon(
+  props: React.JSX.IntrinsicAttributes & React.SVGProps<SVGSVGElement>
+) {
   return (
     <svg
       {...props}

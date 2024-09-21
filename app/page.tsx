@@ -8,7 +8,7 @@ import { buttonVariants } from "@/components/ui/button";
 import Link from "next/link";
 import ScrollingText from "@/components/AnimatedScrollingText";
 import { motion } from "framer-motion";
-import { Tshirt } from "@/components/TShirt";
+
 import { Scene } from "@/components/Scene";
 
 export default function Home() {
