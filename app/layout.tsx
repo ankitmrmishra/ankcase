@@ -25,7 +25,7 @@ export const metadata: Metadata = {
     type: "website",
     images: [
       {
-        url: "https://ankcase.vercel.app/api/static", // Replace with actual OG image URL
+        url: "https://ankcase.vercel.app/api/og", // Replace with actual OG image URL
         width: 1200,
         height: 630,
         alt: "Create Beautiful customized Gears at CustomGears",
