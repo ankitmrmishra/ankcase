@@ -9,8 +9,6 @@ import Link from "next/link";
 import ScrollingText from "@/components/AnimatedScrollingText";
 import { motion } from "framer-motion";
 
-import { Scene } from "@/components/Scene";
-
 export default function Home() {
   return (
     <div className="bg-white text-gray-900">
@@ -102,9 +100,6 @@ export default function Home() {
                 className="absolute w-20 -left-6 -bottom-6 select-none"
               />
               <Phone className="w-64" imgsrc="/testimonials/1.jpg" />
-            </div>
-            <div className="">
-              <Scene />
             </div>
           </div>
         </MaxWidthWrapper>
