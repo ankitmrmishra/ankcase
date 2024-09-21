@@ -1,8 +1,10 @@
 import MaxWidthWrapper from "@/components/MaxWidthWrapper";
-import { Check, Star } from "lucide-react";
+import { ArrowRight, Check, Star } from "lucide-react";
 import Phone from "@/components/Phone";
 import { Icons } from "@/components/Icons";
 import { Reviews } from "@/components/Reviews";
+import { buttonVariants } from "@/components/ui/button";
+import Link from "next/link";
 
 export default function Home() {
   return (
@@ -29,15 +31,15 @@ export default function Home() {
               <ul className="mt-8 space-y-2 text-left fobt-medium flex flex-col items-center sm:items-start">
                 <div className="space-y-2">
                   <li className="flex gap-1.5 items-center text-left">
-                    <Check className="h-5 w-5n shrink-0 text-green-600" />
+                    <Check className="h-5 w-5n shrink-0 text-blue-600" />
                     High-quality, Durable material
                   </li>
                   <li className="flex gap-1.5 items-center text-left">
-                    <Check className="h-5 w-5n shrink-0 text-green-600" />5 Year
+                    <Check className="h-5 w-5n shrink-0 text-blue-600" />5 Year
                     Guarantee
                   </li>
                   <li className="flex gap-1.5 items-center text-left">
-                    <Check className="h-5 w-5n shrink-0 text-green-600" />
+                    <Check className="h-5 w-5n shrink-0 text-blue-600" />
                     Modern iphone models supported
                   </li>
                 </div>
@@ -154,7 +156,7 @@ export default function Home() {
                 <div className="flex flex-col">
                   <p className="font-semibold">Jonathan</p>
                   <div className="flex gap-1.5 items-center text-zinc-600">
-                    <Check className="h-4 w-4 stroke-[3px] text-green-600" />
+                    <Check className="h-4 w-4 stroke-[3px] text-blue-600" />
                     <p className="text-sm">Verified Purchase</p>
                   </div>
                 </div>
@@ -222,12 +224,52 @@ export default function Home() {
           <div className="mx-auto max-w-6xl px-6 lg:px-8">
             <div className="relative flex flex-col items-center md:grid grid-cols-2 gap-40">
               <img
-                src="/arrow.pmg"
+                src="/arrow.png"
                 alt=""
-                className="absolute top-[25rem] md:top-1/2 -translate-y-1/2 z-10"
+                className="absolute top-[25rem] md:top-1/2 -translate-y-1/2 z-10 left-1/2 -translate-x-1/2 rotate-90 md:rotate-0"
               />
+              <div className="relative h-80 md:h-full w-full md:justify-self-end max-w-sm rounded-xl bg-gray-900/5 ring-inset ring-gray-900/10 lg:rounded-2xl ">
+                <img
+                  src="/horse.jpg"
+                  className="rounded-md object-cover bg-white shadow-2xl ring-1 ring-gray-900/10 h-full w-full"
+                  alt=""
+                />
+              </div>
+              <Phone className="w-60" imgsrc="/horse_phone.jpg" />
             </div>
           </div>
+
+          <ul className="mx-auto mt-12 max-w-prose sm:text-lg space-y-2 w-fit">
+            <li className="w-fit">
+              <Check className="h-5 w-5 text-blue-600 inline mr-1.5" />
+              High-quality silicone material
+            </li>
+            <li className="w-fit">
+              <Check className="h-5 w-5 text-blue-600 inline mr-1.5" />
+              Scratch- and fingerprint resistant coating
+            </li>
+            <li className="w-fit">
+              <Check className="h-5 w-5 text-blue-600 inline mr-1.5" />
+              Wireless charging compatible
+            </li>
+            <li className="w-fit">
+              <Check className="h-5 w-5 text-blue-600 inline mr-1.5" />5 year
+              print warranty
+            </li>
+
+            <div className="flex justify-center text-white">
+              <Link
+                className={buttonVariants({
+                  size: "lg",
+                  className: "mx-auto mt-8 ",
+                })}
+                href="/configure/upload"
+              >
+                Create your case now{" "}
+                <ArrowRight className="h-4 w-4 ml-1.5 text-white" />
+              </Link>
+            </div>
+          </ul>
         </MaxWidthWrapper>
       </section>
     </div>
