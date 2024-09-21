@@ -10,11 +10,12 @@ const Navbar = async () => {
   const user = await getUser();
   const isAdmin = user?.email === process.env.ADMIN_EMAIL;
   return (
-    <nav className="sticky z-[100] h-14 inset-x-0 top-0 w-full border-b border-gray-200 bg-white/75 backdrop-blur-lg transition-all">
+    <nav className="sticky z-[100] h-20 inset-x-0 top-0 w-full border-b border-gray-200 bg-white/75 backdrop-blur-lg transition-all">
       <MaxWidthWrapper>
-        <div className="flex h-14 items-center justify-between  border-b border-zinc-200">
-          <Link href="/" className="flex z-40 font-semibold">
-            Anks <span className="text-blue-600">Case</span>
+        <div className="flex h-20 items-center justify-between  border-b border-zinc-200">
+          <Link className="flex items-center justify-center" href="#">
+            <MountainIcon className="h-6 w-6" />
+            <span className="ml-2 text-2xl font-bold">CustomGear</span>
           </Link>
 
           <div className="h-full flex items-center space-x-4">
@@ -96,3 +97,22 @@ const Navbar = async () => {
 };
 
 export default Navbar;
+
+function MountainIcon(props: any) {
+  return (
+    <svg
+      {...props}
+      xmlns="http://www.w3.org/2000/svg"
+      width="24"
+      height="24"
+      viewBox="0 0 24 24"
+      fill="none"
+      stroke="currentColor"
+      strokeWidth="2"
+      strokeLinecap="round"
+      strokeLinejoin="round"
+    >
+      <path d="m8 3 4 8 5-5 5 15H2L8 3z" />
+    </svg>
+  );
+}
