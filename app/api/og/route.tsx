@@ -17,8 +17,8 @@ export async function GET() {
           backgroundColor: "white",
         }}
       >
-        <div tw="flex flex-col w-full h-full items-center justify-center bg-white">
-          <div tw="bg-gray-50 flex w-full">
+        <div tw="flex flex-col w-full h-full items-center justify-center ">
+          <div tw="h-full flex w-full items-center justify-center">
             <div tw="flex flex-col  w-full py-12 px-4 items-start justify-between p-8">
               <div tw="flex flex-col md:flex-row md:items-center justify-between text-2xl">
                 <svg
@@ -37,11 +37,11 @@ export async function GET() {
                 <span className="ml-2 text-2xl font-bold">CustomGear</span>
               </div>
 
-              <h2 tw="flex flex-col text-3xl sm:text-4xl font-bold tracking-tight text-gray-900 text-left">
-                <span tw="text-indigo-600">
+              <h2 tw="flex flex-col  sm:text-4xl font-bold tracking-tight text-gray-900 text-left">
+                <span tw="text-blue-600 font-bold text-6xl">
                   Make your Gears look 10x Personal, Beautiful and Creative
                 </span>
-                <span tw="text-gray-400 text-sm">
+                <span tw="text-gray-400 text-base">
                   Create custom Gears with your photos or let our AI design
                   something amazing for you.
                 </span>
