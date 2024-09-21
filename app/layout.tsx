@@ -16,8 +16,22 @@ const geistMono = localFont({
 });
 
 export const metadata: Metadata = {
-  title: "AnksCase",
-  description: "Create Beautifull case for your Phones",
+  title: "CustomGear",
+  description: "Create Beautiful customized Gears",
+  openGraph: {
+    title: "CustomGears",
+    description: "Design and create beautiful custom Gears.",
+    url: "https://ankcase.vercel.app/", // Replace with your actual site URL
+    type: "website",
+    images: [
+      {
+        url: "https://ankcase.vercel.app/api/static", // Replace with actual OG image URL
+        width: 1200,
+        height: 630,
+        alt: "Create Beautiful customized Gears at CustomGears",
+      },
+    ],
+  },
 };
 
 export default function RootLayout({
