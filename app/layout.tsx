@@ -28,9 +28,17 @@ export const metadata: Metadata = {
         url: "https://ankcase.vercel.app/api/og", // Replace with actual OG image URL
         width: 1200,
         height: 630,
+
         alt: "Create Beautiful customized Gears at CustomGears",
       },
     ],
+  },
+  twitter: {
+    card: "summary_large_image",
+    site: "@AnkitMishraexe", // Replace with your Twitter handle
+    title: "CustomGears - Create Beautiful customized Gears",
+    description: "Design and create beautiful custom Personalized Gears.",
+    images: ["https://ankcase.vercel.app/api/og"], // Replace with actual OG image URL
   },
 };
 
